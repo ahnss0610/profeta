@@ -10,7 +10,6 @@ function App() {
  let [제목, 이름변경] = useState(['비대면재활', '대면재활']); 
  let [좋아요, 좋아요변경] = useState(0); 
  let [좋아요2, 좋아요변경2] = useState(0); 
- let posts = '목록';
 
  //function 제목바꾸기() {
    //var newArray = [...스팟명];
@@ -19,6 +18,8 @@ function App() {
  //}
  
 //<button onClick={ 제목바꾸기 }>버튼</button>
+//<span onClick={ ()=>{ 좋아요변경(좋아요 + 1) } }>♡</span> {좋아요}
+  //<span onClick={ ()=>{ 좋아요변경2(좋아요2 + 1) } }>♡</span> {좋아요2}
   
 return (
     <div className="App">
@@ -30,13 +31,11 @@ return (
       </div>
       <Modal/>
       <div className="list">
-        <h3>{ 제목[0] } <span onClick={ ()=>{ 좋아요변경(좋아요 + 1) } }>♡</span> 
-        {좋아요}</h3>
+        <h3>{ 제목[0] }</h3>
         <hr/>
       </div>
       <div className="list">
-        <h3>{ 제목[1] } <span onClick={ ()=>{ 좋아요변경2(좋아요2 + 1) } }>♡</span> 
-        {좋아요2} </h3> 
+        <h3>{ 제목[1] } </h3> 
         <hr/>
       </div>
     </div>
