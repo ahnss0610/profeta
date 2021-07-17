@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import imgA from './images/프로필.png';
 import imgZ from './images/navigation-button.gif';
+import img1 from './images/navigation-button.gif';
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
 //<button onClick={ 제목바꾸기 }>버튼</button>
 //<span onClick={ ()=>{ 좋아요변경(좋아요 + 1) } }>♡</span> {좋아요}
   //<span onClick={ ()=>{ 좋아요변경2(좋아요2 + 1) } }>♡</span> {좋아요2}
-  
+
 return (
     <div className="App">
       <div className="Top-nav">
@@ -31,12 +32,12 @@ return (
       </div>
       <Modal/>
       <div className="list">
+      <div className="lists">
         <h3>{ 제목[0] }</h3>
-        <hr/>
-      </div>
-      <div className="list">
-        <h3>{ 제목[1] } </h3> 
-        <hr/>
+        </div>
+        <div className="lists">
+        <h3>{ 제목[1] } </h3>
+        </div>
       </div>
     </div>
   );

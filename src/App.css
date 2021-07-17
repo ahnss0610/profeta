@@ -21,7 +21,6 @@ display: inline-block;
 
 
 .Top-nav {
-  vertical-align: auto;
   background:#f2f3f4;
   width: 100%;
   color: #0060ff;
@@ -35,10 +34,16 @@ display: inline-block;
 }
 
 .list {
-  margin-top: 30px;
+  display: table;
+  margin-top: 20px;
   /*text-align: left;*/
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 200px;
+  width: 100%;
+}
+.lists {
+  vertical-align: auto;
+  display: table-cell;
+
 }
 
 .App-logo {
