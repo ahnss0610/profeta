@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import imgA from './images/프로필.png';
-import imgZ from './images/navigation-button.gif';
-import img1 from './images/navigation-button.gif';
+import imgB from './images/btmnav.png';
+import imgZ from './images/back.png';
 
 function App() {
 
@@ -16,7 +16,7 @@ return (
     <div className="App">
       <div className="Top-nav">
         <div className="menu">
-        <img src={imgZ}width='20' height='20' alt='testA'/>
+        <img src={imgZ}width='20' height='20' alt='backspace'/>
       </div>
         <div className="title">마이페이지</div>
       </div>
@@ -35,6 +35,7 @@ return (
         <h3>{ 제목[7] } </h3>
       </div>
       </div>
+        <img src={imgB}width='500' height='100' alt='btm-nav'/>
       </div>
       );
     }
@@ -49,7 +50,7 @@ return (
       <p>담당전문가:이재민 </p>
       </div>
       <div className="profile">
-      <img src={imgA}width='60' height='60' alt='testA'/>
+      <img src={imgA}width='60' height='60' alt='profile'/>
       </div>
       </div>
       </div>
