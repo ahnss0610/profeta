@@ -10,11 +10,12 @@ import img3 from './images/3.PNG';
 import img4 from './images/4.PNG';
 import img5 from './images/5.PNG';
 import img6 from './images/6.PNG';
+import img7 from './images/하단.PNG';
 
 function App() {
 
  let [제목, 이름변경] = useState(['비대면재활', '대면재활', '식단관리',
- '재활질문', '상담내역', '결제정보']); 
+ '재활질문', '상담내역', '결제정보', '재활예약', '건강', 'TALK', ]); 
 
 return (
     <div className="App">
@@ -54,6 +55,9 @@ return (
       <img src={img6}width='60' height='60' alt='testA'/>
         <h3>{ 제목[5] }</h3>
         </div>
+      </div>
+      <div className="footer">
+      <img src={img7}width='68%' alt='testA'/>
       </div>
     </div>
   );
