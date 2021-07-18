@@ -4,14 +4,33 @@
 .body{
   font-family: 'nanumbarungothic';
 }
+.title {
+  text-align: center;
+}
 
 .modal {
   padding: 20px;
   color: white;
   background: #0060ff;
+  text-align: left;
 }
 
-.top-nav {
+.profile {
+  text-align: right;
+  padding: 0px 10px 0px 100px;
+}
+
+.m {
+vertical-align: auto;
+display: flex;
+flex-wrap: wrap;
+text-align: left;
+display: inline-block;
+padding: 10px 10px 10px 10px;
+}
+
+
+.Top-nav {
   background:#f2f3f4;
   width: 100%;
   color: #0060ff;
@@ -19,11 +38,17 @@
   font-weight: 600;
   font-size: 20px;
   box-sizing: border-box;
+  display: table;
+}
+.menu {
+ text-align: left;
+ display: table-cell;
 }
 
 .list {
+  background:#f2f3f4;
   margin-top: 30px;
-  /*text-align: left;*/
+  text-align: left;
   padding-left: 20px;
   padding-right: 20px;
 }
