@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import imgA from './images/프로필.png';
 import imgB from './images/btmnav.png';
+import imgC from './images/topnav.PNG';
 import imgZ from './images/back.png';
 
 function App() {
@@ -21,6 +22,7 @@ return (
         <div className="title">마이페이지</div>
       </div>
       <Modal/>
+      <img src={imgC}width='500' height='100' alt='top-nav'/>
       <div className="list">
       <div className="list1">
         <h3>{ 제목[0] }</h3>
