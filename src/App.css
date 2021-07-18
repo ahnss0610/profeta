@@ -12,15 +12,13 @@
 }
 
 .m {
-vertical-align: auto;
-display: flex;
-flex-wrap: wrap;
 text-align: left;
 display: inline-block;
 }
 
 
 .Top-nav {
+  display: table;
   background:#f2f3f4;
   width: 100%;
   color: #0060ff;
@@ -30,20 +28,22 @@ display: inline-block;
   box-sizing: border-box;
 }
 .menu {
- text-align: left;
+ text-align: center;
+ display: table-cell;
+ width: 1%
 }
 
 .list {
   display: table;
   margin-top: 20px;
+  margin-left: 3%;
   /*text-align: left;*/
   height: 200px;
-  width: 100%;
+  width: 90%;
 }
 .lists {
   vertical-align: auto;
   display: table-cell;
-
 }
 
 .App-logo {

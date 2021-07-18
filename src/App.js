@@ -4,23 +4,12 @@ import logo from './logo.svg';
 import './App.css';
 import imgA from './images/프로필.png';
 import imgZ from './images/navigation-button.gif';
-import img1 from './images/navigation-button.gif';
+import img1 from './images/1.PNG';
+import img2 from './images/2.PNG';
 
 function App() {
 
- let [제목, 이름변경] = useState(['비대면재활', '대면재활']); 
- let [좋아요, 좋아요변경] = useState(0); 
- let [좋아요2, 좋아요변경2] = useState(0); 
-
- //function 제목바꾸기() {
-   //var newArray = [...스팟명];
-   //newArray[0] = '추천'
-   //이름변경( newArray );
- //}
- 
-//<button onClick={ 제목바꾸기 }>버튼</button>
-//<span onClick={ ()=>{ 좋아요변경(좋아요 + 1) } }>♡</span> {좋아요}
-  //<span onClick={ ()=>{ 좋아요변경2(좋아요2 + 1) } }>♡</span> {좋아요2}
+ let [제목, 이름변경] = useState(['비대면재활', '대면재활', '']); 
 
 return (
     <div className="App">
@@ -33,9 +22,11 @@ return (
       <Modal/>
       <div className="list">
       <div className="lists">
+      <img src={img1}width='60' height='60' alt='testA'/>
         <h3>{ 제목[0] }</h3>
         </div>
         <div className="lists">
+        <img src={img2}width='60' height='60' alt='testA'/>
         <h3>{ 제목[1] } </h3>
         </div>
       </div>
@@ -47,10 +38,8 @@ return (
     return (
       <div className="modal">
         <div class="m">
-        <div className="m1">
       <h3>안녕하세요 ○○○님</h3>
       <p>이번주 비대면 예약이 2건 있습니다.</p>
-      </div>
       <div>
       <img src={imgA}width='60' height='60' alt='testA'/>
       </div>
