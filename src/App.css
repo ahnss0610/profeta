@@ -8,8 +8,8 @@
 
 .modal {
   padding: 20px;
-  color: white;
-  background: #0060ff;
+  color: black;
+  background: white;
 }
 
 .m {
@@ -26,12 +26,24 @@ display: inline-block;
   padding: 20px;
   font-size: 25px;
   box-sizing: border-box;
-  font-weight: 1000;
+  font-weight: 600;
 }
 .menu {
  text-align: center;
  display: table-cell;
  width: 1%;
+}
+.c{
+  margin-top: -50px;
+  color: black;
+  text-align: right;
+  font-size: 17px;
+
+}
+.cc {
+  color: black;
+  text-align: left;
+  font-size: 17px;
 }
 
 .footer{
@@ -39,9 +51,9 @@ display: inline-block;
 }
 
 .list {
+  color: black;
   display: table;
-  margin-top: 30px;
-  margin-left: 6%;
+  margin-left: 5%;
   /*text-align: left;*/
   width: 90%;
 }

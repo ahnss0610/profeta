@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import imgA from './images/프로필.png';
-import imgZ from './images/navigation-button.gif';
+import imgZ from './images/back.png';
 import img1 from './images/1.PNG';
 import img2 from './images/2.PNG';
 import img3 from './images/3.PNG';
@@ -14,50 +14,33 @@ import img7 from './images/하단.PNG';
 
 function App() {
 
- let [제목, 이름변경] = useState(['비대면재활', '대면재활', '식단관리',
- '재활질문', '상담내역', '결제정보', '재활예약', '건강', 'TALK', ]); 
+ let [제목, 이름변경] = useState(['재활질문', '재활Tip', '재활일지' ]); 
 
 return (
     <div className="App">
       <div className="Top-nav">
         <div className="menu">
-        <img src={imgZ}width='20' height='20' alt='testA'/>
+        <img src={imgZ}width='30' height='30' alt='testA'/>
       </div>
-        <div>큐디케어</div>
-      </div>
-      <Modal/>
-      <div className="list">
-      <div className="list1">
-      <img src={img1}width='60' height='60' alt='testA'/>
-        <h3>{ 제목[0] }</h3>
+        <div>큐디Talk</div>
+        <div className="list">
+        <div className="list1">
+        <h5>{ 제목[0] }</h5>
         </div>
         <div className="list1">
-        <img src={img2}width='60' height='60' alt='testA'/>
-        <h3>{ 제목[1] } </h3>
+        <h5>{ 제목[1] }</h5>
         </div>
-        </div>
-        <div className="lists">
-        <div className="list2">
-      <img src={img3}width='60' height='60' alt='testA'/>
-        <h3>{ 제목[2] }</h3>
-        </div>
-        <div className="list2">
-      <img src={img4}width='60' height='60' alt='testA'/>
-        <h3>{ 제목[3] }</h3>
-        </div>
-        </div>
-        <div className="listss">
-        <div className="list3">
-      <img src={img5}width='60' height='60' alt='testA'/>
-        <h3>{ 제목[4] }</h3>
-        </div>
-        <div className="list3">
-      <img src={img6}width='60' height='60' alt='testA'/>
-        <h3>{ 제목[5] }</h3>
+        <div className="list1">
+        <h5>{ 제목[2] }</h5>
         </div>
       </div>
-      <div className="footer">
-      <img src={img7}width='68%' alt='testA'/>
+      <div className="c">
+      <p>게시판 변경</p>
+      </div>
+      <div className="cc">
+      <p>최근 | 인기글</p>
+      </div>
+      <Modal/>
       </div>
     </div>
   );
@@ -67,13 +50,12 @@ return (
     return (
       <div className="modal">
         <div class="m">
-      <h3>안녕하세요 ○○○님</h3>
-      <p>이번주 비대면 예약이 2건 있습니다.</p>
+      <p>평균 약을 언제까지 먹나요?</p>
+      <h5>재활을 하면서 먹는 약이 있는데..</h5>
       <div>
       <img src={imgA}width='60' height='60' alt='testA'/>
       </div>
       </div>
-      <button onClick>예약내역</button> <button onClick>문의내역</button>
       </div>
     )
   }
